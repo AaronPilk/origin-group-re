@@ -1,0 +1,52 @@
+{
+ "cleanUrls": true,
+ "trailingSlash": false,
+ "redirects": [
+  {
+   "source": "/home",
+   "destination": "/",
+   "permanent": true
+  },
+  {
+   "source": "/new-page",
+   "destination": "/",
+   "permanent": true
+  },
+  {
+   "source": "/cart",
+   "destination": "/",
+   "permanent": true
+  },
+  {
+   "source": "/contact",
+   "destination": "/contactus",
+   "permanent": true
+  },
+  {
+   "source": "/contact-us",
+   "destination": "/contactus",
+   "permanent": true
+  },
+  {
+   "source": "/store-1",
+   "destination": "/experience",
+   "permanent": true
+  },
+  {
+   "source": "/store-1/:path*",
+   "destination": "/experience",
+   "permanent": true
+  }
+ ],
+ "headers": [
+  {
+   "source": "/assets/(.*)",
+   "headers": [
+    {
+     "key": "Cache-Control",
+     "value": "public, max-age=31536000, immutable"
+    }
+   ]
+  }
+ ]
+}
